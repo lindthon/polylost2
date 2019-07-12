@@ -14,9 +14,17 @@ import { InformacionDetalladaComponent } from './informacion-detallada/informaci
 import { PerdidosComponent } from './perdidos/perdidos.component';
 import { RegistrarObjetoPerdidoComponent } from './registrar-objeto-perdido/registrar-objeto-perdido.component';
 
+import { Routes, RouterModule } from '@angular/router';
+
+
+const rutas: Routes = [
+ { path: '', component: IndexComponent },
+ { path: 'b', component: BuscarObjetoPerdidoComponent }
+];
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, FooterComponent, IndexComponent, BuscarObjetoPerdidoComponent, ContactoComponent, DetallesComponent, EquipoComponent, InformacionDetalladaComponent, PerdidosComponent, RegistrarObjetoPerdidoComponent ],
+  declarations: [ AppComponent, HeaderComponent, FooterComponent, IndexComponent, BuscarObjetoPerdidoComponent, ContactoComponent, DetallesComponent, EquipoComponent, InformacionDetalladaComponent, PerdidosComponent, RegistrarObjetoPerdidoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
