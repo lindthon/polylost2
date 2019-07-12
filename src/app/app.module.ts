@@ -19,11 +19,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 const rutas: Routes = [
  { path: '', component: IndexComponent },
- { path: 'b', component: BuscarObjetoPerdidoComponent }
+ { path: 'buscar-objeto-perdido', component: BuscarObjetoPerdidoComponent },
+ { path: 'c',component: ContactoComponent}
 ];
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule,RouterModule.forRoot(rutas)],
   declarations: [ AppComponent, HeaderComponent, FooterComponent, IndexComponent, BuscarObjetoPerdidoComponent, ContactoComponent, DetallesComponent, EquipoComponent, InformacionDetalladaComponent, PerdidosComponent, RegistrarObjetoPerdidoComponent ],
   bootstrap:    [ AppComponent ]
 })
