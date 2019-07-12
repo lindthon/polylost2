@@ -20,7 +20,12 @@ import { Routes, RouterModule } from '@angular/router';
 const rutas: Routes = [
  { path: '', component: IndexComponent },
  { path: 'buscar-objeto-perdido', component: BuscarObjetoPerdidoComponent },
- { path: 'contacto',component: ContactoComponent}
+ { path: 'contacto',component: ContactoComponent},
+ { path:'detalles',component: DetallesComponent},
+  { path:'equipo',component: EquipoComponent},
+  { path:'informacion-detallada',component: InformacionDetalladaComponent},
+  { path:'perdidos',component: PerdidosComponent},
+  {path:'registrar-objeto-perdido',component:RegistrarObjetoPerdidoComponent}
 ];
 
 @NgModule({
